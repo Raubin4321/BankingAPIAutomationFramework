@@ -106,8 +106,13 @@ APIAutomationFramework
 
 ## How to Run
 ```bash
-git clone https://github.com/Raubin4321/APIAutomationFramework.git
-cd APIAutomationFramework
-mvn clean test
+# Clone the repository
+git clone https://github.com/Raubin4321/BankingAPIAutomationFramework.git
+
+# Navigate to project
+cd BankingAPIAutomationFramework
+
+# Run tests
+mvn test -Dsuite=suite
 
 ```
