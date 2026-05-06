@@ -68,9 +68,6 @@ It is designed using:
 ```bash
 APIAutomationFramework
 │
-├── src/main/java
-│   └── resources                # Configuration files
-│
 ├── src/test/java
 │   ├── com.api.base             # Base & Service classes
 │   │   ├── BaseService.java
@@ -94,18 +91,16 @@ APIAutomationFramework
 │   │
 │   ├── com.api.tests            # Test Classes
 │       ├── AccountCreationTest.java
-│       ├── LoginAPITest.java
 │       ├── ForgotPasswordTest.java
 │       ├── GetProfileRequestTest.java
-│       ├── UpdateProfileTest.java
-│       ├── LoginAPITest2.java
-│       └── LoginAPITest3.java
+│       ├── LoginAPITest.java
+│       └── UpdateProfileTest.java
 │
 ├── src/test/resources
 │   └── log4j2.xml               # Logging configuration
 │
-├── testng.xml                   # Test suite
-├── pom.xml                      # Dependencies
+├── suite.xml                   # Test suite
+└── pom.xml                     # Dependencies
 
 ```
 
