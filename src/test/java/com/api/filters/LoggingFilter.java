@@ -3,7 +3,7 @@ package com.api.filters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.api.utilities.ExtentManager;
+import com.api.listeners.ExtentManager;
 import com.aventstack.extentreports.ExtentTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

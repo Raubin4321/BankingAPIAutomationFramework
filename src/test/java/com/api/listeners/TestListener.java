@@ -6,7 +6,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.api.utilities.ExtentManager;
 import com.aventstack.extentreports.ExtentTest;
 
 public class TestListener implements ITestListener {
