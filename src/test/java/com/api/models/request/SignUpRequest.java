@@ -11,7 +11,6 @@ public class SignUpRequest {
 	
 	public SignUpRequest(String username, String password, String email, String firstName, String lastName,
 			String mobileNumber) {
-		super();
 		this.username = username;
 		this.password = password;
 		this.email = email;
@@ -79,8 +78,7 @@ public class SignUpRequest {
 		
 		public Builder userName(String username) {
 			this.username = username;
-			Builder x = new Builder(); // or Builder x = this;
-			return x; 
+			return this; 
 		}
 		
 		public Builder password(String password) {

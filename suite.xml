@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="API Test Suite" thread-count="5">
-  <test name="API Test">
-    <classes>
-      <class name="com.api.tests.LoginAPITest"/>
-    </classes>
-  </test>
+<suite name="Banking API Suite">
+
+    <listeners>
+        <listener class-name="com.api.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Auth Tests">
+        <classes>
+            <class name="com.api.tests.AuthServiceTest"/>
+        </classes>
+    </test>
+
+    <test name="User Profile Tests">
+        <classes>
+            <class name="com.api.tests.UserProfileManagementServiceTest"/>
+        </classes>
+    </test>
+
+    <test name="Account Tests">
+        <classes>
+            <class name="com.api.tests.AccountServiceTest"/>
+        </classes>
+    </test>
+
 </suite>

@@ -33,12 +33,16 @@ public class BaseService {
 		return requestSpecification.contentType(ContentType.JSON).body(payload).put(endpoint);
 	}
 	
-	protected void setAuthToken(String token) {
-		requestSpecification.header("Authorization", "Bearer " + token);
-	}
-	
 	protected Response getRequest(String endpoint) {
 		return requestSpecification.get(endpoint);
+	}
+	
+	protected Response patchRequest(Object payload, String endpoint) {
+        return requestSpecification.contentType(ContentType.JSON).body(payload).patch(endpoint);
+    }
+	
+	protected void setAuthToken(String token) {
+		requestSpecification.header("Authorization", "Bearer " + token);
 	}
 
 }

@@ -1,17 +1,19 @@
 package com.api.models.request;
 
-public class ProfileRequest {
-	
+public class UpdateProfileRequest {
+
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String mobileNumber;
-	
-	public ProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
+	private String address;
+
+	public UpdateProfileRequest(String firstName, String lastName, String email, String mobileNumber, String address) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.mobileNumber = mobileNumber;
+		this.address = address;
 	}
 
 	public String getFirstName() {
@@ -45,36 +47,50 @@ public class ProfileRequest {
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
-	
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 	public static class Builder {
 		private String firstName;
 		private String lastName;
 		private String email;
 		private String mobileNumber;
-		
+		private String address;
+
 		public Builder firstName(String firstName) {
 			this.firstName = firstName;
 			return this;
 		}
-		
+
 		public Builder lastName(String lastName) {
 			this.lastName = lastName;
 			return this;
 		}
-		
+
 		public Builder email(String email) {
 			this.email = email;
 			return this;
 		}
-		
+
 		public Builder mobileNumber(String mobileNumber) {
 			this.mobileNumber = mobileNumber;
 			return this;
 		}
-		
-		public ProfileRequest build() {
-			ProfileRequest profileRequest = new ProfileRequest(firstName, lastName, email, mobileNumber);
-			return profileRequest;
+
+		public Builder address(String address) {
+			this.address = address;
+			return this;
+		}
+
+		public UpdateProfileRequest build() {
+			UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest(firstName, lastName, email, mobileNumber, address);
+			return updateProfileRequest;
 		}
 	}
 
