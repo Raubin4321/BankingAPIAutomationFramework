@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">API Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">09-05-2026 20:39:12</span></a>
+<a href="#"><span class="badge badge-primary">14-05-2026 12:25:17</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
@@ -85,31 +86,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">AccountServiceTest</a><a class="dropdown-item" href="#">UserProfileManagementServiceTest</a><a class="dropdown-item" href="#">AuthServiceTest</a>
+<a class="dropdown-item" href="#">AccountServiceTest</a><a class="dropdown-item" href="#">AuthServiceTest</a><a class="dropdown-item" href="#">UserProfileManagementServiceTest</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag="AuthServiceTest"
           device="">
           <div class="test-detail">
             <p class="name">createAccountTest</p>
             <p class="text-sm">
-              <span>8:39:12 pm</span> / <span>00:00:04:189</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:25:17 pm</span> / <span>00:00:01:946</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">createAccountTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:12 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:16 pm</span>
-<span class='badge badge-default'>00:00:04:189</span>
+<h5 class="test-status text-pass">createAccountTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:17 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:19 pm</span>
+<span class='badge badge-default'>00:00:01:946</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -123,14 +124,14 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:12 pm</td>
+        <td>12:25:17 pm</td>
         <td>
           Test Started: Verify if SignUp API is working...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:13 pm</td>
+        <td>12:25:18 pm</td>
         <td>
           <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/auth/signup
 Method  : POST
@@ -149,131 +150,39 @@ Payload :
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:16 pm</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:19 pm</td>
         <td>
-          Test Failed ❌
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 400
+Response Time: 920 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=text/plain;charset=UTF-8
+Content-Length=33
+Date=Thu, 14 May 2026 06:55:18 GMT
+Connection=close
+
+Body:
+Error: Username is already taken!</pre></details>
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:16 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:19 pm</td>
         <td>
-          <textarea readonly class="code-block">java.net.ConnectException: Connection refused: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:589)
-	at java.base/sun.nio.ch.Net.connect(Net.java:578)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1296)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.api.filters.LoggingFilter.filter(LoggingFilter.java:24)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy:180)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.Closure.call(Closure.java:471)
-	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
-	at jdk.proxy1/jdk.proxy1.$Proxy31.get(Unknown Source)
-	at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:179)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at com.api.base.BaseService.postRequest(BaseService.java:29)
-	at com.api.base.AuthService.signUp(AuthService.java:21)
-	at com.api.tests.AuthServiceTest.createAccountTest(AuthServiceTest.java:28)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
+          Test Passed ✅
         </td>
       </tr>
   </tbody>
@@ -281,25 +190,25 @@ Payload :
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag="AuthServiceTest"
           device="">
           <div class="test-detail">
             <p class="name">forgotPasswordTest</p>
             <p class="text-sm">
-              <span>8:39:16 pm</span> / <span>00:00:02:532</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:25:19 pm</span> / <span>00:00:00:387</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">forgotPasswordTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:16 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:19 pm</span>
-<span class='badge badge-default'>00:00:02:532</span>
+<h5 class="test-status text-pass">forgotPasswordTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:19 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:19 pm</span>
+<span class='badge badge-default'>00:00:00:387</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -313,14 +222,14 @@ Payload :
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:16 pm</td>
+        <td>12:25:19 pm</td>
         <td>
           Test Started: Verify that Forgot-Password API is working...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:16 pm</td>
+        <td>12:25:19 pm</td>
         <td>
           <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/auth/forgot-password
 Method  : POST
@@ -334,131 +243,42 @@ Payload :
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:19 pm</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:19 pm</td>
         <td>
-          Test Failed ❌
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 353 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:19 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "message": "If your email exists in our system, you will receive reset instructions."
+}</pre></details>
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:19 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:19 pm</td>
         <td>
-          <textarea readonly class="code-block">java.net.ConnectException: Connection refused: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:589)
-	at java.base/sun.nio.ch.Net.connect(Net.java:578)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1296)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.api.filters.LoggingFilter.filter(LoggingFilter.java:24)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy:180)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.Closure.call(Closure.java:471)
-	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
-	at jdk.proxy1/jdk.proxy1.$Proxy31.get(Unknown Source)
-	at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:179)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at com.api.base.BaseService.postRequest(BaseService.java:29)
-	at com.api.base.AuthService.forgotPassword(AuthService.java:28)
-	at com.api.tests.AuthServiceTest.forgotPasswordTest(AuthServiceTest.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
+          Test Passed ✅
         </td>
       </tr>
   </tbody>
@@ -466,25 +286,25 @@ Payload :
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag="AuthServiceTest"
           device="">
           <div class="test-detail">
             <p class="name">loginTest</p>
             <p class="text-sm">
-              <span>8:39:19 pm</span> / <span>00:00:02:537</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:25:19 pm</span> / <span>00:00:00:607</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:19 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:21 pm</span>
-<span class='badge badge-default'>00:00:02:537</span>
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:19 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:20 pm</span>
+<span class='badge badge-default'>00:00:00:607</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -498,14 +318,14 @@ Payload :
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:19 pm</td>
+        <td>12:25:19 pm</td>
         <td>
           Test Started: Verify if Login API is working...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:19 pm</td>
+        <td>12:25:19 pm</td>
         <td>
           <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/auth/login
 Method  : POST
@@ -520,103 +340,690 @@ Payload :
         </td>
       </tr>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:20 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 543 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:19 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MTksImV4cCI6MTc3ODc0NTMxOX0.0XMJ3TSPS2K8dZWgZnsyH0eJUktmp86TnzLvKc_TtWE",
+    "type": "Bearer",
+    "id": 3720,
+    "username": "Raubin",
+    "email": "raubinkumar@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:20 pm</td>
+        <td>
+          Test Passed ✅
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="UserProfileManagementServiceTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">getProfileInfoTest</p>
+            <p class="text-sm">
+              <span>12:25:20 pm</span> / <span>00:00:00:428</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getProfileInfoTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:20 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-default'>00:00:00:428</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:20 pm</td>
+        <td>
+          Test Started: Verify if get Profile API is working...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:20 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/profile
+Method  : GET
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+
+Payload : 
+No Payload</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 396 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:20 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "id": 3720,
+    "username": "Raubin",
+    "email": "raubinkumar@gmail.com",
+    "firstName": "Raubin",
+    "lastName": "Kumar",
+    "mobileNumber": "9178543276"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Passed ✅
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="UserProfileManagementServiceTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">updateProfileTest</p>
+            <p class="text-sm">
+              <span>12:25:21 pm</span> / <span>00:00:00:396</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updateProfileTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-default'>00:00:00:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Started: Verify if Update Profile API is working...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/profile
+Method  : GET
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+
+Payload : 
+No Payload</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 178 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:20 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "id": 3720,
+    "username": "Raubin",
+    "email": "raubinkumar@gmail.com",
+    "firstName": "Raubin",
+    "lastName": "Kumar",
+    "mobileNumber": "9178543276"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/profile
+Method  : PUT
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Content-Type=application/json
+
+Payload : 
+{
+  "firstName" : "Raubin",
+  "lastName" : "Kumar",
+  "email" : "raubinkumar@gmail.com",
+  "mobileNumber" : "9178543276"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 167 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:20 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "id": 3720,
+    "username": "Raubin",
+    "email": "raubinkumar@gmail.com",
+    "firstName": "Raubin",
+    "lastName": "Kumar",
+    "mobileNumber": "9178543276"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Passed ✅
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="UserProfileManagementServiceTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">partialUpdateProfileTest</p>
+            <p class="text-sm">
+              <span>12:25:21 pm</span> / <span>00:00:00:205</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">partialUpdateProfileTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-default'>00:00:00:205</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Started: Verify if partial update Profile API is working...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/profile
+Method  : PATCH
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Content-Type=application/json
+
+Payload : 
+{
+  "firstName" : null,
+  "lastName" : null,
+  "email" : null,
+  "mobileNumber" : null,
+  "address" : "Patna, Bihar"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 167 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:21 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+{
+    "id": 3720,
+    "username": "Raubin",
+    "password": "$2a$10$oTq.l75TkyLsYN2yB1Rdh.U37Y6GaeaZMo4pEJ8/elwmEiM7IUMMm",
+    "email": "raubinkumar@gmail.com",
+    "firstName": "Raubin",
+    "lastName": "Kumar",
+    "mobileNumber": "9178543276",
+    "roles": [
+        "ROLE_USER"
+    ],
+    "active": true,
+    "createdAt": "2026-01-06T16:53:10.125237",
+    "updatedAt": "2026-05-11T06:40:46.90842",
+    "address": "Patna, Bihar",
+    "fullName": "Raubin Kumar"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Passed ✅
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="UserProfileManagementServiceTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">changePasswordTest</p>
+            <p class="text-sm">
+              <span>12:25:21 pm</span> / <span>00:00:00:848</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">changePasswordTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:21 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:22 pm</span>
+<span class='badge badge-default'>00:00:00:848</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          Test Started: Verify if Change Password API is working
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:21 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/change-password
+Method  : PUT
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Content-Type=application/json
+
+Payload : 
+{
+  "currentPassword" : "Munna@4457",
+  "newPassword" : "Munna@4458",
+  "confirmPassword" : "Munna@4458"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 486 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Length=0
+Date=Thu, 14 May 2026 06:55:21 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          Test Passed ✅
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/users/change-password
+Method  : PUT
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjAsImV4cCI6MTc3ODc0NTMyMH0.oStP7FgDA1qRc_yZn-H3lTFUApKAaq2GeL3u42qyTuc
+Content-Type=application/json
+
+Payload : 
+{
+  "currentPassword" : "Munna@4458",
+  "newPassword" : "Munna@4457",
+  "confirmPassword" : "Munna@4457"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 200
+Response Time: 316 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Length=0
+Date=Thu, 14 May 2026 06:55:22 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+
+Body:
+</pre></details>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag="AccountServiceTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">createBankAccountTest</p>
+            <p class="text-sm">
+              <span>12:25:22 pm</span> / <span>00:00:00:402</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">createBankAccountTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:22 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:23 pm</span>
+<span class='badge badge-default'>00:00:00:402</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AccountServiceTest</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          Test Started: Verify if Create Account API is working
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:22 pm</td>
+        <td>
+          <details><summary><b>Request Details (click to expand)</b></summary><pre>URI     : http://64.227.160.186:8080/api/accounts
+Method  : POST
+Headers : Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYXViaW4iLCJpYXQiOjE3Nzg3NDE3MjIsImV4cCI6MTc3ODc0NTMyMn0.AW66sXfGFyZTEPikRfjimPt-4ICGoYy7p7nSsPsp908
+Accept=*/*
+Content-Type=application/json
+
+Payload : 
+{
+  "accountType" : "Current Account",
+  "branch" : "North Branch"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:25:23 pm</td>
+        <td>
+          <details><summary><b>Response Details (click to expand)</b></summary><pre>Status Code  : 500
+Response Time: 351 ms
+Headers      : Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Thu, 14 May 2026 06:55:22 GMT
+Connection=close
+
+Body:
+{
+    "timestamp": "2026-05-14 06:55:22",
+    "status": 500,
+    "error": "System Error",
+    "message": "An unexpected error occurred",
+    "path": "uri=/api/accounts",
+    "solution": "Please try again later or contact support",
+    "errorCode": "SYS_001"
+}</pre></details>
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:21 pm</td>
+        <td>12:25:23 pm</td>
         <td>
           Test Failed ❌
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:39:21 pm</td>
+        <td>12:25:23 pm</td>
         <td>
-          <textarea readonly class="code-block">java.net.ConnectException: Connection refused: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:589)
-	at java.base/sun.nio.ch.Net.connect(Net.java:578)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1296)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.api.filters.LoggingFilter.filter(LoggingFilter.java:24)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1791)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1797)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1240)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:798)
-	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.invoke(TransformMetaMethod.java:59)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass$1.invoke(ClosureMetaClass.java:217)
-	at org.codehaus.groovy.runtime.metaclass.TransformMetaMethod.doMethodInvoke(TransformMetaMethod.java:66)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:318)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy:180)
-	at io.restassured.internal.RequestSpecificationImpl$_post_closure2.doCall(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:338)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:274)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:270)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1013)
-	at groovy.lang.Closure.call(Closure.java:471)
-	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:54)
-	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:114)
-	at jdk.proxy1/jdk.proxy1.$Proxy31.get(Unknown Source)
-	at io.restassured.internal.assertbridge.GroovyAssertBridge.runWithUnwrap(GroovyAssertBridge.java:46)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:179)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at com.api.base.BaseService.postRequest(BaseService.java:29)
-	at com.api.base.AuthService.login(AuthService.java:16)
-	at com.api.tests.AuthServiceTest.loginTest(AuthServiceTest.java:37)
+          <textarea readonly class="code-block">java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at org.testng.Assert.assertNotNull(Assert.java:1480)
+	at com.api.tests.AccountServiceTest.createBankAccountTest(AccountServiceTest.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -652,259 +1059,14 @@ Payload :
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="4"
-          author=""
-          tag="UserProfileManagementServiceTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">getProfileInfoTest</p>
-            <p class="text-sm">
-              <span>8:39:24 pm</span> / <span>00:00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">getProfileInfoTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Started: Verify if get Profile API is working...
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Skipped ⚠️java.net.ConnectException: Connection refused: connect
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="5"
-          author=""
-          tag="UserProfileManagementServiceTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">updateProfileTest</p>
-            <p class="text-sm">
-              <span>8:39:24 pm</span> / <span>00:00:00:002</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">updateProfileTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-default'>00:00:00:002</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Started: Verify if Update Profile API is working...
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Skipped ⚠️java.net.ConnectException: Connection refused: connect
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="6"
-          author=""
-          tag="UserProfileManagementServiceTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">partialUpdateProfileTest</p>
-            <p class="text-sm">
-              <span>8:39:24 pm</span> / <span>00:00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">partialUpdateProfileTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Started: Verify if partial update Profile API is working...
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Skipped ⚠️java.net.ConnectException: Connection refused: connect
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="7"
-          author=""
-          tag="UserProfileManagementServiceTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">changePasswordTest</p>
-            <p class="text-sm">
-              <span>8:39:24 pm</span> / <span>00:00:00:003</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">changePasswordTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:24 pm</span>
-<span class='badge badge-default'>00:00:00:003</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">UserProfileManagementServiceTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Started: Verify if Change Password API is working
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:24 pm</td>
-        <td>
-          Test Skipped ⚠️java.net.ConnectException: Connection refused: connect
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="8"
-          author=""
-          tag="AccountServiceTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">createAccountTest</p>
-            <p class="text-sm">
-              <span>8:39:27 pm</span> / <span>00:00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">createAccountTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:27 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:27 pm</span>
-<span class='badge badge-default'>00:00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">AccountServiceTest</span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:27 pm</td>
-        <td>
-          Test Started: Verify if Create Account API is working
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:27 pm</td>
-        <td>
-          Test Skipped ⚠️java.net.ConnectException: Connection refused: connect
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
         <li class="test-item"  status="skip" test-id="9"
           author=""
           tag="AccountServiceTest"
           device="">
           <div class="test-detail">
-            <p class="name">getAccountByNumberTest</p>
+            <p class="name">getBankAccountByNumberTest</p>
             <p class="text-sm">
-              <span>8:39:27 pm</span> / <span>00:00:00:000</span>
+              <span>12:25:23 pm</span> / <span>00:00:00:000</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -912,9 +1074,9 @@ Payload :
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">getAccountByNumberTest</h5>
-<span class='badge badge-success'>05.09.2026 8:39:27 pm</span>
-<span class='badge badge-danger'>05.09.2026 8:39:27 pm</span>
+<h5 class="test-status text-skip">getBankAccountByNumberTest</h5>
+<span class='badge badge-success'>05.14.2026 12:25:23 pm</span>
+<span class='badge badge-danger'>05.14.2026 12:25:23 pm</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -929,17 +1091,17 @@ Payload :
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:39:27 pm</td>
+        <td>12:25:23 pm</td>
         <td>
           Test Started: Verify Get Account by Account Number is working
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:39:27 pm</td>
+        <td>12:25:23 pm</td>
         <td>
-          Test Skipped ⚠️java.lang.Throwable: Method com.api.tests.AccountServiceTest.getAccountByNumberTest() on instance com.api.tests.AccountServiceTest@23d1e5d0 depends on not successfully finished methods 
-[com.api.tests.AccountServiceTest.createAccountTest() on instance com.api.tests.AccountServiceTest@23d1e5d0]
+          Test Skipped ⚠️java.lang.Throwable: Method com.api.tests.AccountServiceTest.getBankAccountByNumberTest() on instance com.api.tests.AccountServiceTest@5e8ac0e1 depends on not successfully finished methods 
+[com.api.tests.AccountServiceTest.createBankAccountTest() on instance com.api.tests.AccountServiceTest@5e8ac0e1]
         </td>
       </tr>
   </tbody>
@@ -967,15 +1129,15 @@ Payload :
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.net.ConnectException</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.net.ConnectException</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -988,23 +1150,9 @@ Payload :
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:12 pm</td>
+<td>12:25:22 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>createAccountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>forgotPasswordTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>loginTest</a>
+<a href="#" class="linked" test-id='8' id='8'>createBankAccountTest</a>
 </td>
 </tr>
 </tbody>
@@ -1030,7 +1178,8 @@ Payload :
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>2</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
 </span>
 <p class="name">AccountServiceTest</p>
 <p class="duration text-sm">2 tests</p>
@@ -1038,7 +1187,8 @@ Payload :
 <div class="test-contents d-none">
 <div class="info">
 <h4>AccountServiceTest</h4>
-<span status="skip" class='badge log badge-skip'>2 skipped</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1049,72 +1199,18 @@ Payload :
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:27 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:25:22 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>createAccountTest</a>
+<a href="#" class="linked" test-id='8' id='8'>createBankAccountTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:27 pm</td>
+<td>12:25:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>getAccountByNumberTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-skip'>4</span>
-</span>
-<p class="name">UserProfileManagementServiceTest</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>UserProfileManagementServiceTest</h4>
-<span status="skip" class='badge log badge-skip'>4 skipped</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>getProfileInfoTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>updateProfileTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>partialUpdateProfileTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:39:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>changePasswordTest</a>
+<a href="#" class="linked" test-id='9' id='9'>getBankAccountByNumberTest</a>
 </td>
 </tr>
 </tbody>
@@ -1124,7 +1220,7 @@ Payload :
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log pass-bg'>3</span>
 </span>
 <p class="name">AuthServiceTest</p>
 <p class="duration text-sm">3 tests</p>
@@ -1132,7 +1228,7 @@ Payload :
 <div class="test-contents d-none">
 <div class="info">
 <h4>AuthServiceTest</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1143,25 +1239,79 @@ Payload :
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:12 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:17 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>createAccountTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:16 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:19 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>forgotPasswordTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:39:19 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:19 pm</td>
 <td>
 <a href="#" class="linked" test-id='3' id='3'>loginTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">UserProfileManagementServiceTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UserProfileManagementServiceTest</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>getProfileInfoTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>updateProfileTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>partialUpdateProfileTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>changePasswordTest</a>
 </td>
 </tr>
 </tbody>
@@ -1181,25 +1331,25 @@ Payload :
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>09-05-2026 20:39:12</h3>
+<h3>14-05-2026 12:25:17</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>09-05-2026 20:39:27</h3>
+<h3>14-05-2026 12:25:23</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1215,13 +1365,13 @@ Payload :
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='77%'>
+<b>7</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>3</b> tests failed,
-<b>6</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='11%'><b>1</b> tests failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1238,10 +1388,10 @@ Payload :
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='17%'><b>7</b> events passed</small></div>
 <div>
-<small data-tooltip='25%'><b>6</b> events failed,
-<b data-tooltip='%'>18</b> others
+<small data-tooltip='5%'><b>2</b> events failed,
+<b data-tooltip='%'>30</b> others
 </small>
 </div>
 </div>
@@ -1257,7 +1407,7 @@ Payload :
 </div></div>
 <script>
 var timeline = {
-"createAccountTest":4.189,"forgotPasswordTest":2.532,"loginTest":2.537,"getProfileInfoTest":0.001,"updateProfileTest":0.002,"partialUpdateProfileTest":0.001,"changePasswordTest":0.003,"createAccountTest":0.001,"getAccountByNumberTest":0
+"createAccountTest":1.946,"forgotPasswordTest":0.387,"loginTest":0.607,"getProfileInfoTest":0.428,"updateProfileTest":0.396,"partialUpdateProfileTest":0.205,"changePasswordTest":0.848,"createBankAccountTest":0.402,"getBankAccountByNumberTest":0
 };
 </script>
 <div class="row">
@@ -1269,26 +1419,26 @@ var timeline = {
 <tr>
 <td>AccountServiceTest</td>
 <td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>UserProfileManagementServiceTest</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0%</td>
 </tr>
 <tr>
 <td>AuthServiceTest</td>
-<td>0</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>UserProfileManagementServiceTest</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1325,10 +1475,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 3,
+passParent: 7,
+failParent: 1,
 warningParent: 0,
-skipParent: 6,
+skipParent: 1,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1342,11 +1492,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 6,
+passEvents: 7,
+failEvents: 2,
 warningEvents: 0,
-skipEvents: 6,
-infoEvents: 12
+skipEvents: 1,
+infoEvents: 29
 };
 </script>        </div>
       </div>

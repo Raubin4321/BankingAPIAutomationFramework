@@ -1,6 +1,9 @@
 package com.api.models.response;
 
-public class AccountResponse {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class BankAccountResponse {
 
 	private String accountNumber;
 	private String accountType;
@@ -10,11 +13,11 @@ public class AccountResponse {
 	private String createdAt;
 	private String ownerName;
 	
-	public AccountResponse() {
+	public BankAccountResponse() {
 		
 	}
 	
-	public AccountResponse(String accountNumber, String accountType, Double balance, String status, String branch,
+	public BankAccountResponse(String accountNumber, String accountType, Double balance, String status, String branch,
 			String createdAt, String ownerName) {
 		this.accountNumber = accountNumber;
 		this.accountType = accountType;
